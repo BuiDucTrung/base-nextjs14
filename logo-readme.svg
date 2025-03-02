@@ -20,7 +20,7 @@
                         transform: translate(-2px, 2px);
                     }
 
-                    20% {
+                    40% {
                         opacity: 1;
                         transform: translate(2px, 2px);
                     }
