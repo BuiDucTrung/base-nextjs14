@@ -1,4 +1,4 @@
-<a href="#" target='_black'>
+<a href="#" target='_blank'>
     <img src="/logo-readme.svg" width="1200" alt='trungg' />
 </a> 
 
