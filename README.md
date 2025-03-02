@@ -1,5 +1,5 @@
 <a href="#" target='_black'>
-    <img src="public/assets/logo-readme.svg" width="1200" alt='trungg' />
+    <img src="/logo-readme.svg" width="1200" alt='trungg' />
 </a> 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
