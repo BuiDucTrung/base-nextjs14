@@ -91,21 +91,24 @@
     <symbol id="text">
         <style>
             @keyframes animate {
-          
+                20% {
+                    stroke-dashoffset: 300;
+
+                }
                  100% {
-                    stroke-dashoffset: 160;
+                    stroke-dashoffset: 0;
 
                 }
             }
 
             #text text {
-                stroke-dasharray: 80;
+                stroke-dasharray: 300;
                     stroke-width: 1px;
-
-                animation: animate 1s linear infinite;
+                    stroke-dashoffset: 300;
+                animation: animate 1.5s linear infinite;
             }
         </style>
-        <text text-anchor="start" x="50%" y="10%" fill="rgba(0,0,0,.1)" font-size="50px" font-family="Arial"
+        <text text-anchor="start" x="50%" y="10%" fill="rgba(0,0,0,.0)" font-size="50px" font-family="Arial"
             font-weight="900" letter-spacing="6" stroke="white" stroke-linejoin="round">
             HELLO WORLD!!!
         </text>
