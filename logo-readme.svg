@@ -92,7 +92,7 @@
         <style>
             @keyframes animate {
                 20% {
-                    stroke-dashoffset: 300;
+                    stroke-dashoffset: 400;
 
                 }
                  100% {
@@ -102,10 +102,10 @@
             }
 
             #text text {
-                stroke-dasharray: 300;
+                    stroke-dasharray: 400;
                     stroke-width: 1px;
-                    stroke-dashoffset: 300;
-                animation: animate 1.5s linear infinite;
+                    stroke-dashoffset: 400;
+                    animation: animate 1.5s linear infinite;
             }
         </style>
         <text text-anchor="start" x="50%" y="10%" fill="rgba(0,0,0,.0)" font-size="50px" font-family="Arial"
