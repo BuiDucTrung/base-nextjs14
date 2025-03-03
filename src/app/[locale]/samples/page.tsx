@@ -4,7 +4,7 @@ import SectionChangeTheme from '@/components/sections/pageSample/SectionChangeTh
 import SectionForm from '@/components/sections/pageSample/SectionForm';
 import SectionSplitText from '@/components/sections/pageSample/SectionSplitText';
 import useTheme from '@/lib/hooks/useTheme';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { AnimatePresence, motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { FC } from 'react';
 // import {useTranslations} from 'next-intl';
 const PageSamples: FC<any> = (props) => {
@@ -22,26 +22,31 @@ const PageSamples: FC<any> = (props) => {
 	const scaleX = useSpring(rawScaleX, { stiffness: 150, damping: 100 });
 
 	return (
-		<motion.div
-			className={`pageSamples w-full h-[200dvh] grid grid-rows-[20px_1fr_20px] items-start justify-items-center !pt-0  pb-20 gap-16 font-[family-name:var(--font-geist-sans)] duration-300 ${
-				theme !== 'dark' ? 'text-black' : 'text-white'
-			} `}
-			style={{ background: bg }}
-		>
+		<AnimatePresence>
 			<motion.div
-				className="sticky top-0 left-0 origin-left w-full bg-pink-500 h-[10px]"
-				style={{ scaleX: scaleX }}
-			></motion.div>
-			<main className="w-full flex flex-col g items-center gap-[1rem]">
-				<SectionChangeLanguage />
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				exit={{ opacity: 0 }}
+				transition={{ duration: 0.5 }} // Set duration here
+				className={`pageSamples w-full h-[200dvh] grid grid-rows-[20px_1fr_20px] items-start justify-items-center !pt-0  pb-20 gap-16 font-[family-name:var(--font-geist-sans)] duration-300 ${
+					theme !== 'dark' ? 'text-black' : 'text-white'
+				} `}
+				style={{ background: bg }}
+			>
+				<motion.div
+					className="sticky top-0 left-0 origin-left w-full bg-pink-500 h-[10px]"
+					style={{ scaleX: scaleX }}
+				></motion.div>
+				<main className="w-full flex flex-col g items-center gap-[1rem]">
+					<SectionChangeLanguage />
 
-				<SectionChangeTheme />
-				<SectionSplitText />
+					<SectionChangeTheme />
+					<SectionSplitText />
 
-				<SectionForm />
-			</main>
-		</motion.div>
-	);
-};
+					<SectionForm />
+				</main>
+			</motion.div>
+		</AnimatePresence>
+)};
 
 export default PageSamples;
