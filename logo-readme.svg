@@ -105,7 +105,7 @@
                     stroke-dasharray: 400;
                     stroke-width: 1px;
                     stroke-dashoffset: 400;
-                    animation: animate 1.5s ease-in infinite;
+                    animation: animate 2s ease-in infinite;
             }
         </style>
         <text text-anchor="start" x="50%" y="10%" fill="rgba(0,0,0,.0)" font-size="50px" font-family="Arial"
