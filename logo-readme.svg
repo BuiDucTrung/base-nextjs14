@@ -88,38 +88,5 @@
             </div>
         </div>
     </foreignObject>
-    <symbol id="text">
-        <style>
-            @keyframes animate {
-                0% {
-                    stroke-dasharray: 40;
 
-                }
-
-                
-         
-                50% {
-                    stroke-dasharray: 360;
-                }
-
-                 100% {
-                    stroke-dasharray: 40;
-
-                }
-            }
-
-            #text text {
-                stroke-dasharray: 40;
-                    stroke-width: 1px;
-
-                animation: animate 3s linear infinite ;
-            }
-        </style>
-        <text text-anchor="start" x="50%" y="10%" fill="rgba(0,0,0,.1)" font-size="50px" font-family="Arial"
-            font-weight="900" letter-spacing="6" stroke="white" stroke-linejoin="round">
-            HELLO WORLD!!!
-        </text>
-    </symbol>
-    <use xlink:href="#text" transform="translate(-270,0)">
-    </use>
 </svg>
