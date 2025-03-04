@@ -1,4 +1,6 @@
 <svg viewBox="0 0 1200 750" width="1200" height="750" xmlns="http://www.w3.org/2000/svg">
+    
+
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
@@ -88,6 +90,17 @@
             </div>
         </div>
     </foreignObject>
+        <style>
+            @keyframes border {
+                100%{
+                    stroke-dashoffset: -750;
+                }
+            }
+            rect {
+                animation: border 2s linear 0s infinite normal forwards;
+            }    
+        </style>
+        <rect fill="transparent" width="100%" height="100%" stroke-width="8" stroke-linejoin="round" stroke-dasharray="1200 750" stroke="#FF0066" stroke-dashoffset='750' ></rect>
     <symbol id="text">
         <style>
             @keyframes animate {
