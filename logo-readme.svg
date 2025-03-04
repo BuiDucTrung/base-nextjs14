@@ -93,7 +93,7 @@
         <style>
             @keyframes border {
                 100%{
-                    stroke-dashoffset: -750;
+                    stroke-dashoffset: -1200;
                 }
             }
             rect {
